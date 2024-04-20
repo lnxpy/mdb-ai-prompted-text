@@ -57,7 +57,7 @@ def main(args: List[str]) -> None:
     text = user_input["Text"]
     prompt = user_input["Prompt"]
 
-    output = text_operation(text, prompt)
+    output = text_operation(long_text=text, prompt=prompt)
 
     io.write({"answer": output})
 
