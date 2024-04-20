@@ -1,0 +1,26 @@
+name: AI Text Prompting
+description: Ask AI to do an operation on your text
+title: "AI: Text Prompting"
+labels: ["prompting", "ai", "mindsdb", "mdb"]
+body:
+  - type: textarea
+    attributes:
+      label: Text
+      description: Write or paste your text here
+      render: markdown
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Prompt
+      description: Prompt phrase
+      placeholder: Summarized the text into two sentences..
+    validations:
+      required: false
+  - type: checkboxes
+    attributes:
+      label: Submission Privacy
+      description: By submitting this issue, your issue content will be publicly available for other users.
+      options:
+        - label: I know that my issue submission content is visible to others
+          required: true

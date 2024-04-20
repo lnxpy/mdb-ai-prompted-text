@@ -1,9 +1,6 @@
-name: Testing
-
 on:
-  push:
-    branches:
-      - main
+  issues:
+    types: [opened]
 
 jobs:
   Test:
@@ -16,4 +13,8 @@ jobs:
       - name: Run action
         uses: ./
         with:
-          name: John
+          issue_number: ${{ github.event.issue.number }}
+          mdb_token: ${{ secrets.MDB_TOKEN }}
+
+      # - name: Commenter
+      # Commenting the output
