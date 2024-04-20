@@ -39,7 +39,7 @@ def text_operation(
         return chat_completion_gpt.choices[0].message.content
     except OpenAIError as e:
         print(f"An error occurred with the MindsDB Serve API: {e}")
-        return "Error in text operation."
+        return f"Error in text operation. {e}"
 
 
 def main(args: List[str]) -> None:
