@@ -12,9 +12,13 @@ jobs:
 
       - name: Run action
         uses: ./
+        id: ai
         with:
           issue_number: ${{ github.event.issue.number }}
           mdb_token: ${{ secrets.MDB_TOKEN }}
 
-      # - name: Commenter
-      # Commenting the output
+      - name: Create comment
+        uses: peter-evans/create-or-update-comment@v3
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body: ${{ steps.ai.outputs.answer }}
