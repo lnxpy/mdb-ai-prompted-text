@@ -14,7 +14,7 @@ body:
     attributes:
       label: Prompt
       description: Prompt phrase
-      placeholder: Summarized the text into two sentences..
+      placeholder: Summarize the text into two sentences..
     validations:
       required: false
   - type: checkboxes
