@@ -11,7 +11,7 @@ from pyaction.issues import IssueForm
 def text_operation(
     long_text,
     model="gpt-3.5-turbo",
-    prompt="Summarized the text into two sentences",
+    prompt="Summarize the text into one sentence",
 ):
     """
     Doing AI operations on the `long_text` by calling the MindsDB Serve API.
