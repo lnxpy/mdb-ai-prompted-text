@@ -3,7 +3,7 @@
 This experimental implementation is powered by [MindsDB](https://mdb.ai) & [PyAction](https://github.com/lnxpy/pyaction).
 
 ### Usage
-Simply open an ***"AI Text Prompting"*** issue on this repository and ask AI to do operations on your input text. Wait for the response in comment form.
+Simply open an ***"AI Text Prompting"*** issue on this repository and ask AI to do operations on your input text. Wait for the response in the form of a comment on your issue.
 
-> [!CAUTION] Submission Privacy
-> Your issue submission is visible to other users.
+> [!CAUTION]
+> **Submission Privacy:** Your issue submission is visible to other users.

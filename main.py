@@ -21,6 +21,11 @@ def text_operation(
     :return: Summary of the text or an error message.
     """
 
+    prompt = (
+        prompt
+        + ". Respond the whole answer into only one paragraph and don't use newlines."
+    )
+
     try:
         client_mindsdb_serve = OpenAI(
             api_key=io.read("mdb_token"),
