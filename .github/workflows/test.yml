@@ -7,6 +7,14 @@ jobs:
     runs-on: ubuntu-latest
     name: Testing the action
     steps:
+
+      - name: Create processing comment
+        uses: peter-evans/create-or-update-comment@v4
+        id: comment
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body: Processing..
+
       - name: Checkout
         uses: actions/checkout@v2
 
@@ -17,8 +25,9 @@ jobs:
           issue_number: ${{ github.event.issue.number }}
           mdb_token: ${{ secrets.MDB_TOKEN }}
 
-      - name: Create comment
-        uses: peter-evans/create-or-update-comment@v3
+      - name: Update comment
+        uses: peter-evans/create-or-update-comment@v4
         with:
-          issue-number: ${{ github.event.issue.number }}
+          comment-id: ${{ steps.comment.outputs.comment-id }}
           body: ${{ steps.ai.outputs.answer }}
+          reactions: rocket
