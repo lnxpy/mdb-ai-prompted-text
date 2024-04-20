@@ -31,3 +31,4 @@ jobs:
           comment-id: ${{ steps.comment.outputs.comment-id }}
           body: ${{ steps.ai.outputs.answer }}
           reactions: rocket
+          edit-mode: replace
