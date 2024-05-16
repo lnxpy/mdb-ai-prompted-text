@@ -1,2 +1,2 @@
-pyaction @ git+https://github.com/lnxpy/pyaction@main
+pyaction==0.6.2
 openai==1.30.1
