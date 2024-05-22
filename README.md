@@ -1,5 +1,7 @@
 ## MDB.AI Prompted Text Action <a href="https://github.com/lnxpy/pyaction"><img alt="pyaction" src="https://img.shields.io/badge/PyAction-white?label=Made%20with&labelColor=white&color=0064D7"></a>
 
+> FORK THIS REPO, AND CREATE A SECRET NAMED `MDB_TOKEN` WITH THE CORRESPONDING VALUE TO MAKE IT WORK!
+
 This experimental implementation is powered by [MindsDB](https://mdb.ai) & [PyAction](https://github.com/lnxpy/pyaction).
 
 ### Usage
